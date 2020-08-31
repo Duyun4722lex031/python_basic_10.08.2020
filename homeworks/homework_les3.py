@@ -1,12 +1,11 @@
-def some_funk(some_a:float, some_b:float, some_c:int = 1) -> float:
-    """Вычисляет сумму и возводит в степень
+# 1. Реализовать функцию, принимающую два числа (позиционные аргументы) и выполняющую их деление. Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 
-    :param some_a:float первый аргумент
-    :param some_b:float второй аргумент
-    :param some_c:int степень
-    :return:
-    """
-    result = (some_a + some_b) ** some_c
-    return result
+def my_division(number_one, number_two):
+    return  number_one / number_two
 
-print(some_funk(2, 4))
+if __name__ == '__main__':
+    try:
+        print(my_division(int(input('введите первое число')),
+                          int(input('введите второе число'))))
+    except ZeroDivisionError:
+        print('деление на ноль недопустимо')
