@@ -1,6 +1,6 @@
 # 1. Реализовать функцию, принимающую два числа (позиционные аргументы) и выполняющую их деление. Числа запрашивать у пользователя, предусмотреть обработку ситуации деления на ноль.
 
-def my_division(number_one, number_two):
+def my_division(number_one: float, number_two: float) -> float:
     return  number_one / number_two
 
 if __name__ == '__main__':
